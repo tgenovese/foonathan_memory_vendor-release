@@ -14,9 +14,11 @@ tracks:
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc}
     devel_branch: master
+    last_release: f3ab481cda60adc18d4172367f16af6076d8fde4
+    last_version: 0.1.0
     name: foonathan_memory_vendor
     patches: null
-    release_inc: 0
+    release_inc: '1'
     release_repo_url: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
     release_tag: f3ab481cda60adc18d4172367f16af6076d8fde4
     ros_distro: eloquent
