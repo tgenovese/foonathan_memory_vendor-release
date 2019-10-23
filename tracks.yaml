@@ -20,7 +20,7 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
-    release_tag: f3ab481cda60adc18d4172367f16af6076d8fde4
+    release_tag: v:{version}
     ros_distro: eloquent
     vcs_type: git
     vcs_uri: https://github.com/eProsima/foonathan_memory_vendor.git
