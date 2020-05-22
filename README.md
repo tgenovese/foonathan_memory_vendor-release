@@ -1,3 +1,26 @@
+## foonathan_memory_vendor (foxy) - 1.0.0-1
+
+The packages in the `foonathan_memory_vendor` repository were released into the `foxy` distro by running `/usr/bin/bloom-release -r foxy foonathan_memory_vendor --override-release-repository-push-url git@github.com:ros2-gbp/foonathan_memory_vendor-release` on `Fri, 22 May 2020 21:14:55 -0000`
+
+The `foonathan_memory_vendor` package was released.
+
+Version of package(s) in repository `foonathan_memory_vendor`:
+
+- upstream repository: https://github.com/eProsima/foonathan_memory_vendor.git
+- release repository: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
+- rosdistro version: `0.6.0-1`
+- old version: `0.6.0-1`
+- new version: `1.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.14`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## foonathan_memory_vendor (foxy) - 0.6.0-1
 
 The packages in the `foonathan_memory_vendor` repository were released into the `foxy` distro by running `/usr/bin/bloom-release -n -r foxy foonathan_memory_vendor --override-release-repository-push-url git@github.com:ros2-gbp/foonathan_memory_vendor-release` on `Mon, 27 Apr 2020 13:47:20 -0000`
