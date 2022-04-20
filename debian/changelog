@@ -1,0 +1,28 @@
+ros-humble-foonathan-memory-vendor (1.2.0-3bullseye) bullseye; urgency=high
+
+  * Update upstream to release 0.7-1 (#49)
+
+ -- Miguel Company <miguelcompany@eprosima.com>  Thu, 25 Nov 2021 08:00:00 -0000
+
+ros-humble-foonathan-memory-vendor (1.1.0-3bullseye) bullseye; urgency=high
+
+  * QD Security Vulnerability Declaration: REP 2006 (#34 <https://github.com/eProsima/foonathan_memory_vendor/pull/34>)
+  * Update vendor package Quality Declaration to QL3 (#35 <https://github.com/eProsima/foonathan_memory_vendor/pull/35>)
+  * Add options instead of forcing them (#32 <https://github.com/eProsima/foonathan_memory_vendor/pull/32>)
+    
+      * Add build memory tools option
+      * Add options for building tests and examples
+      * Added option dependency validation
+    
+  * Fixed linter issues (#38 <https://github.com/eProsima/foonathan_memory_vendor/pull/38>)
+  * Point to upstream quality declaration and bump to level 2 (#39 <https://github.com/eProsima/foonathan_memory_vendor/pull/39>)
+  * Fixed test dependency (#41 <https://github.com/eProsima/foonathan_memory_vendor/pull/41>)
+  * Use git apply instead of cherry-pick (#42 <https://github.com/eProsima/foonathan_memory_vendor/pull/42>)
+  * Shorten some excessively long lines of CMake (#44 <https://github.com/eProsima/foonathan_memory_vendor/pull/44>)
+  * Update package scripts for VS2019 (#45 <https://github.com/eProsima/foonathan_memory_vendor/pull/45>)
+  * Drop support for VS2015 (#46 <https://github.com/eProsima/foonathan_memory_vendor/pull/46>)
+  * Contributors: Chris Lalancette, Michel Hidalgo, Mauro Passerino, Miguel Company, Louise Poubel, Scott K Logan, Miguel Barro
+
+ -- Miguel Company <miguelcompany@eprosima.com>  Tue, 18 May 2021 07:00:00 -0000
+
+
