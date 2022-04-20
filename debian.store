@@ -1,1 +1,1 @@
-{"base": "c5e281d", "parent": "debian/rolling/foonathan_memory_vendor", "previous": "3714724", "trim": "", "trimbase": ""}
+{"base": "bf347ea", "parent": "debian/humble/foonathan_memory_vendor", "previous": "99a387e", "trim": "", "trimbase": ""}
