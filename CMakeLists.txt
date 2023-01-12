@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.5)
-project(foonathan_memory_vendor VERSION "1.2.0")
+cmake_minimum_required(VERSION 3.14)
+project(foonathan_memory_vendor VERSION "1.2.2")
 
 find_package(foonathan_memory QUIET)
 
@@ -10,7 +10,7 @@ if(NOT foonathan_memory_FOUND)
   # Global flag to cause add_library() to create shared libraries if on.
   # If set to true, this will cause all libraries to be built shared
   # unless the library was explicitly added as a static library.
-  option(BUILD_SHARED_LIBS "Create shared libraries by default" ON)
+  option(BUILD_SHARED_LIBS "Create shared libraries by default" OFF)
 
   # Option to build memory examples
   option(BUILD_MEMORY_EXAMPLES "Build memory examples" OFF)
@@ -18,6 +18,8 @@ if(NOT foonathan_memory_FOUND)
   option(BUILD_MEMORY_TESTS "Build memory tests" OFF)
   # Option to build memory tools
   option(BUILD_MEMORY_TOOLS "Build memory tools" ON)
+  # Option for position independence
+  option(CMAKE_POSITION_INDEPENDENT_CODE "Enable position independence" ON)
 
   # Validate option dependency
   if((NOT BUILD_MEMORY_TOOLS) AND (BUILD_MEMORY_EXAMPLES OR BUILD_MEMORY_TESTS))
@@ -26,10 +28,11 @@ if(NOT foonathan_memory_FOUND)
       " or BUILD_MEMORY_TESTS are set")
   endif()
 
-  if(BUILD_SHARED_LIBS)
-    # Library will be statically created with PIC code
-    list(APPEND extra_cmake_args -DCMAKE_POSITION_INDEPENDENT_CODE=ON)
-  endif()
+  # Propagate BUILD_SHARED_LIBS
+  list(APPEND extra_cmake_args -DBUILD_SHARED_LIBS=${BUILD_SHARED_LIBS})
+
+  # Propagate CMAKE_POSITION_INDEPENDENT_CODE
+  list(APPEND extra_cmake_args -DCMAKE_POSITION_INDEPENDENT_CODE=${CMAKE_POSITION_INDEPENDENT_CODE})
 
   if(DEFINED CMAKE_BUILD_TYPE)
     list(APPEND extra_cmake_args -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE})
