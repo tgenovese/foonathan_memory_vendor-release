@@ -1,3 +1,26 @@
+## foonathan_memory_vendor (humble) - 1.2.2-1
+
+The packages in the `foonathan_memory_vendor` repository were released into the `humble` distro by running `/usr/local/bin/bloom-release -r humble -y foonathan_memory_vendor` on `Thu, 12 Jan 2023 15:01:26 -0000`
+
+The `foonathan_memory_vendor` package was released.
+
+Version of package(s) in repository `foonathan_memory_vendor`:
+
+- upstream repository: https://github.com/eProsima/foonathan_memory_vendor.git
+- release repository: https://github.com/ros2-gbp/foonathan_memory_vendor-release.git
+- rosdistro version: `1.2.0-3`
+- old version: `1.2.0-3`
+- new version: `1.2.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## foonathan_memory_vendor (galactic) - 1.2.0-1
 
 The packages in the `foonathan_memory_vendor` repository were released into the `galactic` distro by running `/usr/bin/bloom-release --ros-distro galactic --track galactic foonathan_memory_vendor` on `Tue, 08 Feb 2022 06:25:48 -0000`
