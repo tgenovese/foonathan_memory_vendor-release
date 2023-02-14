@@ -2,6 +2,19 @@
 Changelog for package foonathan_memory_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.0 (2023-02-14)
+------------------
+* Update upstream to release 0.7-3 (#62)(#63)
+
+1.2.2 (2022-12-09)
+------------------
+* Fix CMake minimum required version (#60)
+
+1.2.1 (2022-02-24)
+------------------
+* Propagate `BUILD_SHARED_LIBS` and `CMAKE_POSITION_INDEPENDENT_CODE` to memory (#55)(#58)
+* Remove unused `foonathan_memory-config.cmake` file (#57)
+
 1.2.0 (2021-11-25)
 ------------------
 * Update upstream to release 0.7-1 (#49)
