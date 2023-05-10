@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(foonathan_memory_vendor VERSION "1.3.0")
+project(foonathan_memory_vendor VERSION "1.3.1")
 
 find_package(foonathan_memory QUIET)
 
@@ -63,6 +63,9 @@ if(NOT foonathan_memory_FOUND)
       if(DEFINED ANDROID_TOOLCHAIN_NAME)
         list(APPEND extra_cmake_args "-DANDROID_TOOLCHAIN_NAME=${ANDROID_TOOLCHAIN_NAME}")
       endif()
+    endif()
+    if(QNX)
+      list(APPEND extra_cmake_args "-DCMAKE_SYSTEM_PROCESSOR=${CPUVARDIR}")
     endif()
   endif()
   include(ExternalProject)
