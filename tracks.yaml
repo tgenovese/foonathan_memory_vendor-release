@@ -1,4 +1,4 @@
-release_repo_url: git@github.com:ros2-gbp/foonathan_memory_vendor-release
+release_repo_url: git@github.com:tgenovese/foonathan_memory_vendor-release.git
 tracks:
   dashing:
     actions:
